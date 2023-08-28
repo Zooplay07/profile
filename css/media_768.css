@@ -1,0 +1,151 @@
+/* media width: 768 이하 */
+
+@media all and (max-width: 768px) {
+    .section {
+        padding: 3rem 2rem;
+    }
+    .title {
+        font-size: 2rem;
+    }
+    .description {
+        font-size: 1rem;
+    }
+
+    .home {
+        padding: 3rem;
+    }
+
+    .home_title {
+        font-size: 2.5rem;
+        margin-bottom: 0.5rem;
+    }
+
+    /* Header 부분 */
+    .header {
+        flex-flow: column;
+        align-items: start;
+        background-color: var(--color-primary);
+    }
+        .header_nav {
+            width: 100%;
+        }
+            .header_menu {
+                display: none;
+                flex-direction: column;
+                text-align: center;
+                padding: 1rem 4rem;
+                gap:  1rem;
+            }
+            .header_menu.open {
+                display: flex;
+            }
+
+
+        .hamburger {
+            display: block;
+            color: var(--color-white);
+            font-size: 1.5rem;
+            position: absolute;
+            top: 1.4rem;
+            right: 1rem;
+            border: 0;
+        }
+
+    /* About 부분 */
+    .about_content {
+        flex-direction: column;
+        align-items: center;
+    }
+    .about_box {
+        width: 100%;
+    }
+
+    /* Skills 부분 */
+    .skills_content {
+        display: grid;
+        width: 100%;
+        grid-template-rows: 1fr;
+        grid-template-columns: 1fr;
+        margin: 2rem auto;
+        grid-template-areas:
+        "a"
+        "b"
+        "c"
+    }
+
+        /* 아래부분은 생략가능 합니다.(이해를 위해 추가했습니다) */
+        .skills_coding {
+            grid-area: a;
+            padding: 1rem;
+            background-color: var(--color-primary);
+        }
+        .skills_tools {
+            grid-area: b;
+            padding: 1rem;
+            background-color: var(--color-primary);
+            filter: brightness(150%);
+        }
+        .skills_etc {
+            grid-area: c;
+            padding: 1rem;
+            background-color: var(--color-primary);
+            filter: brightness(120%);
+        }
+
+
+    /* My Work */
+    .category {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+        .category_button {
+            width: 100%;
+        }
+
+        /* project 8개 시작 =============== */
+        .project_all {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            grid-template-rows: repeat(2, 1fr);
+            gap: 1rem;
+        }
+
+    /* Testimonial */
+    .testimonial_each {
+        display: flex;
+        flex-direction: column;
+    }
+    .testimonial_each:nth-child(even) .testimonial_img {
+        order: 0;   /* order: 0; 이면 왼쪽, 1이면 오른쪽 입니다 */
+    }
+
+    /* Top 버튼 */
+    .arrow_up {
+        right: 1rem;
+        bottom: 1rem;
+        transform: scale(0.8);
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+}
+
+
+
+
+
+
+
+
+
